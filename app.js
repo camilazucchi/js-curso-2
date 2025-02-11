@@ -20,3 +20,24 @@ function verificarChute() {
 function exibirAlerta() {
     alert('Eu amo JS');
 }
+
+/* Desafio 4: Crie uma função que é executada quando o botão Prompt é clicado, perguntando o nome de uma cidade do Brasil.
+Em seguida, exiba um alerta com a mensagem concatenando a resposta com o texto: "Estive em {cidade} e lembrei de você." */
+const botao3 = document.getElementById('botao3');
+botao3.innerHTML = 'Prompt';
+
+function exibirPrompt() {
+    const cidade = prompt('Em qual cidade do Brasil você esteve?');
+    alert(`Estive em ${cidade} e lembrei de você.`);
+}
+
+// Desafio 5: Ao clicar no botão Soma, peça 2 números inteiros e exiba o resultado da soma em um alerta
+const botao4 = document.getElementById('botao4');
+botao4.innerHTML = 'Soma';
+
+function exibirSoma() {
+    const numero1 = parseInt(prompt('Insira o número inteiro A: '));
+    const numero2 = parseInt(prompt('Insira o número inteiro B: '));
+    const soma = numero1 + numero2;
+    alert(`O resultado da soma dos números ${numero1} e ${numero2} é ${soma}`);
+}
